@@ -1,12 +1,12 @@
+  
 <?php
-$m=1;
-for($i=1; $i<=5; $i++) {
-    for($k=1; $k<=$m; $k++)  {
-        echo "*";
-    }
-    for($c=$m; $c>1; $c--) {
-        echo "*";
-    }
-    echo $val . PHP_EOL;
-    $m++;
+echo "Groote van piramide?\n";
+$staple = readline();
+if (is_numeric($staple)) {
+        for ($een = 0; $een < $staple; $een++) {
+            for($wee = 0; $wee <= $een; $wee++ ) {
+                echo "*";
+            }
+            echo PHP_EOL;
+        }
 }
